@@ -1,7 +1,145 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PriceCompare</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="header"><h2 class="logo">Price<span>Compare</span></h2><p>SMARTER SHOPPING STARTS HERE</p></header><main>
-<section class="hero"><p class="eyebrow">COMPARE • SAVE • SHOP SMART</p><h1>Compare anything.<br><span>Find a better deal.</span></h1><p class="intro">Search products and compare available shopping offers.</p><form id="searchForm" class="search-box"><input id="searchInput" type="search" placeholder="Search earbuds, iPhone, laptop, shoes..." required><button>Search deals</button></form><p class="suggestion">Search any product · Results depend on shopping data availability</p></section>
-<section class="products-section"><div class="section-title"><div><p class="eyebrow">YOUR RESULTS</p><h2>Product comparison</h2></div><span id="status">Search to compare offers</span></div>
-<div class="filters"><label>Category<select id="categoryFilter"><option>All</option><option>Electronics</option><option>Mobiles</option><option>Laptops</option><option>Fashion</option><option>Home</option><option>Other</option></select></label><label>Sort by<select id="sortFilter"><option value="low">Price: Low to high</option><option value="high">Price: High to low</option><option value="name">Product name</option></select></label><button id="clearButton" class="clear-button">Clear</button></div>
-<div id="summary" class="summary" hidden></div><div class="utility-row"><div><p class="eyebrow">SAVED FOR LATER</p><div id="wishlist" class="chip-list"></div></div><div><p class="eyebrow">RECENT SEARCHES</p><div id="recentSearches" class="chip-list"></div></div></div>
-<div id="productResults" class="comparison-list"><p class="empty">Search for a product to compare available store offers.</p></div></section></main><footer><p>PriceCompare | Verify final price, delivery and availability at the retailer.</p></footer><script src="app.js"></script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090812">
+    <meta name="description" content="Compare product prices and find better shopping deals.">
+    <title>PriceCompare | Compare. Save. Shop Smart.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="/" class="logo">Price<span>Compare</span></a>
+    <div class="header-note">SMARTER SHOPPING STARTS HERE</div>
+</header>
+
+<main>
+    <section class="hero">
+        <p class="eyebrow">COMPARE · SAVE · SHOP SMART</p>
+
+        <h1>
+            Compare anything.<br>
+            <span>Find a better deal.</span>
+        </h1>
+
+        <p class="intro">
+            Search products and compare available shopping offers
+            from multiple stores.
+        </p>
+
+        <form id="searchForm" class="search-box">
+            <input
+                id="searchInput"
+                type="search"
+                placeholder="Search iPhone, earbuds, laptop, shoes..."
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">
+                Search deals →
+            </button>
+        </form>
+
+        <p class="suggestion">
+            Try: iPhone 14 · Samsung S24 · Sony headphones · HP laptop
+        </p>
+    </section>
+
+    <section class="products-section">
+
+        <div class="section-title">
+            <div>
+                <p class="eyebrow">YOUR RESULTS</p>
+                <h2>Product comparison</h2>
+            </div>
+
+            <span id="status" aria-live="polite">
+                Search to compare offers
+            </span>
+        </div>
+
+        <div class="filters">
+
+            <label>
+                Category
+                <select id="categoryFilter">
+                    <option value="All">All</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Mobiles">Mobiles</option>
+                    <option value="Laptops">Laptops</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Home">Home</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+
+            <label>
+                Sort by
+                <select id="sortFilter">
+                    <option value="low">Price: Low to high</option>
+                    <option value="high">Price: High to low</option>
+                    <option value="name">Product name</option>
+                    <option value="offers">Most store offers</option>
+                </select>
+            </label>
+
+            <label>
+                Condition
+                <select id="conditionFilter">
+                    <option value="All">All conditions</option>
+                    <option value="New">New</option>
+                    <option value="Refurbished">Refurbished</option>
+                    <option value="Used">Used</option>
+                    <option value="Unknown">Not specified</option>
+                </select>
+            </label>
+
+            <button id="clearButton" class="clear-button" type="button">
+                Clear results
+            </button>
+
+        </div>
+
+        <div id="summary" class="summary" hidden></div>
+
+        <div class="utility-row">
+
+            <div>
+                <p class="eyebrow">SAVED FOR LATER</p>
+                <div id="wishlist" class="chip-list"></div>
+            </div>
+
+            <div>
+                <p class="eyebrow">RECENT SEARCHES</p>
+                <div id="recentSearches" class="chip-list"></div>
+            </div>
+
+        </div>
+
+        <div id="productResults" class="comparison-list">
+
+            <div class="empty">
+                <strong>Your next great deal starts here.</strong>
+                <p>Search for a product to compare available store offers.</p>
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>
+        PriceCompare · Offers are supplied by third-party shopping data.
+        Always verify exact model, condition, delivery and final checkout price.
+    </p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
