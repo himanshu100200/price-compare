@@ -1,28 +1,80 @@
-# PriceCompare — Automatic Search Upgrade
 
-This project replaces the hard-coded sample catalogue with shopping search results from Google Shopping via SerpApi. It preserves the dark purple UI, search, filters, sorting, wishlist and recent searches.
+# PriceCompare
 
-## Local setup (Windows)
-1. Install Node.js LTS: https://nodejs.org/
-2. Extract this ZIP and open the folder in VS Code.
-3. Run `npm install` in the terminal.
-4. Copy `.env.example` to `.env`.
-5. Create a SerpApi account at https://serpapi.com/ and put your private key in `.env`:
-   `SERPAPI_KEY=your_key`
-6. Run `npm start`.
-7. Open `http://localhost:3000`.
+### Compare. Save. Shop Smart.
 
-## Deployment
-GitHub Pages only hosts static frontend files; it cannot run this Node backend or safely store a private API key. Deploy the entire folder to a Node-capable host (for example Render or Railway), set `SERPAPI_KEY` as a private environment variable, use `npm install` as build command and `npm start` as start command.
+PriceCompare is a product price comparison website that helps users search products and compare available shopping offers.
 
-## Important limitations
-- SerpApi is a third-party paid/freemium service; check current plans and usage terms.
-- Results depend on Google Shopping coverage and are not guaranteed for every product or retailer.
-- Prices/stock can change; verify final checkout price, delivery and availability.
-- No retailer pages are scraped directly by this project.
-- Flipkart offers an official affiliate API for registered affiliates: https://affiliate.flipkart.com/api-docs/af_overview.html
-- Amazon India now documents Creators API; access requires Associates enrollment and eligibility: https://affiliate-program.amazon.in/creatorsapi/docs/en-us/introduction
-- Amazon has specific price-display rules for comparison sites; review its terms before integrating Amazon prices: https://affiliate-program.amazon.in/help/operating/linking
+## Features
 
-## Files
-`public/` contains the website. `server.js` securely proxies the shopping search API. Keep `.env` private and never upload it to GitHub.
+- Search products using Google Shopping data.
+- Compare available retailer offers.
+- Automatically highlight the lowest listed price.
+- Show potential price differences.
+- Group products by model, storage and condition where identifiable.
+- Filter by category and condition.
+- Sort by price, name and number of offers.
+- Save favourite products using Wishlist.
+- View recent searches.
+- Responsive mobile-friendly interface.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Express.js
+- SerpApi
+- Google Shopping search engine
+
+## Run Locally
+
+1. Install Node.js LTS.
+2. Clone this repository.
+3. Install dependencies:
+
+   npm install
+
+4. Create a `.env` file in the root folder.
+5. Add your SerpApi key:
+
+   SERPAPI_KEY=your_actual_api_key
+
+6. Start the application:
+
+   npm start
+
+7. Open:
+
+   http://localhost:3000
+
+## Render Deployment
+
+Service Type: Web Service
+
+Build Command:
+
+npm install
+
+Start Command:
+
+npm start
+
+Add this environment variable in Render:
+
+SERPAPI_KEY
+
+Never upload your actual API key to GitHub.
+
+## Important Information
+
+- Shopping results depend on third-party provider coverage and API usage limits.
+- Prices and availability can change.
+- Different product variants and conditions may have separate listings.
+- Always verify the exact product, seller, delivery charges and final checkout price.
+- This project does not directly scrape Amazon or Flipkart.
+
+## Project
+
+PriceCompare — A Smart Product Price Comparison Website.
