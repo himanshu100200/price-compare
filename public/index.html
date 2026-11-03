@@ -5,29 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#090812">
-    <meta name="description" content="HK PriceHunt - Compare product prices and find the best shopping deals.">
+
+    <meta name="description" content="HK PriceHunt helps you compare available product prices and discover better shopping deals.">
 
     <title>HK PriceHunt | Compare. Save. Shop Smart.</title>
 
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
 
 <header class="header">
     <a href="/" class="logo" aria-label="HK PriceHunt Home">
-        <img
-            src="logo.png"
-            alt="HK PriceHunt"
-           style="height: 120px; width: auto; max-width: 350px; object-fit: contain; display: block;"
-        >
+        <img src="/logo.png" alt="HK PriceHunt" class="brand-logo">
     </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy</a>
+    </nav>
 
     <div class="header-note">SMARTER SHOPPING STARTS HERE</div>
 </header>
 
 <main>
-    <section class="hero">
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
         <p class="eyebrow">COMPARE · SAVE · SHOP SMART</p>
 
         <h1>
@@ -49,17 +57,17 @@
                 required
             >
 
-            <button type="submit">
-                Search deals →
-            </button>
+            <button type="submit">Search deals →</button>
         </form>
 
         <p class="suggestion">
             Try: iPhone 14 · Samsung S24 · Sony headphones · HP laptop
         </p>
+
     </section>
 
-    <section class="products-section">
+    <!-- PRODUCT COMPARISON -->
+    <section class="products-section" id="products">
 
         <div class="section-title">
             <div>
@@ -131,25 +139,262 @@
         </div>
 
         <div id="productResults" class="comparison-list">
-
             <div class="empty">
                 <strong>Your next great deal starts here.</strong>
                 <p>Search for a product to compare available store offers.</p>
             </div>
-
         </div>
 
     </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="info-section" id="about">
+
+        <p class="eyebrow">GET TO KNOW US</p>
+        <h2>About HK PriceHunt</h2>
+
+        <p>
+            Welcome to <strong>HK PriceHunt</strong> – your smart
+            destination for discovering better shopping deals.
+        </p>
+
+        <p>
+            We created HK PriceHunt with one simple goal:
+            to make online shopping easier and smarter.
+        </p>
+
+        <p>
+            Instead of visiting multiple websites to compare
+            product prices, users can search for products and
+            explore available shopping offers in one place.
+        </p>
+
+        <h3>Our Mission</h3>
+
+        <p>
+            Our mission is to help shoppers save time, compare
+            available prices and make informed purchasing decisions.
+        </p>
+
+        <h3>How It Works</h3>
+
+        <div class="steps-grid">
+            <div class="info-card">
+                <span>01</span>
+                <h3>Search</h3>
+                <p>Search for your favourite product.</p>
+            </div>
+
+            <div class="info-card">
+                <span>02</span>
+                <h3>Compare</h3>
+                <p>Explore available offers from different stores.</p>
+            </div>
+
+            <div class="info-card">
+                <span>03</span>
+                <h3>Choose</h3>
+                <p>Compare details and visit the retailer to purchase.</p>
+            </div>
+        </div>
+
+        <p class="brand-tagline">
+            HK PriceHunt – Compare More. Save More. Shop Smart.
+        </p>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="info-section" id="contact">
+
+        <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+        <h2>Contact Us</h2>
+
+        <p>
+            Have a question, suggestion or feedback about HK PriceHunt?
+            Feel free to contact us.
+        </p>
+
+        <div class="contact-card">
+            <h3>Get in touch</h3>
+
+            <p>Creator: Himanshu</p>
+
+            <p>
+                Email:
+                <a href="mailto:xerxes.490@gmail.com">
+                    xerxes.490@gmail.com
+                </a>
+            </p>
+
+            <a class="contact-button" href="mailto:xerxes.490@gmail.com">
+                Send us an email →
+            </a>
+        </div>
+
+    </section>
+
+    <!-- PRIVACY POLICY -->
+    <section class="info-section" id="privacy">
+
+        <p class="eyebrow">YOUR PRIVACY MATTERS</p>
+        <h2>Privacy Policy</h2>
+
+        <p>
+            HK PriceHunt aims to respect the privacy of its visitors.
+            This section explains how the website currently handles
+            information.
+        </p>
+
+        <h3>Search Information</h3>
+        <p>
+            When you search for a product, your search query is sent
+            to our server to retrieve available shopping results.
+            The server may use third-party product search services
+            to provide those results.
+        </p>
+
+        <h3>Local Browser Storage</h3>
+        <p>
+            Wishlist items and recent searches may be saved in your
+            browser's local storage so that they remain available
+            on that browser.
+        </p>
+
+        <h3>Third-Party Services</h3>
+        <p>
+            Product information and shopping offers may be supplied
+            by third-party services. Their own privacy policies and
+            terms may apply when you use their services or visit
+            their websites.
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+            For privacy-related questions, contact
+            xerxes.490@gmail.com.
+        </p>
+
+    </section>
+
+    <!-- TERMS -->
+    <section class="info-section" id="terms">
+
+        <p class="eyebrow">WEBSITE GUIDELINES</p>
+        <h2>Terms & Conditions</h2>
+
+        <p>
+            By using HK PriceHunt, you agree to use the website
+            responsibly and for lawful purposes.
+        </p>
+
+        <h3>Product Information</h3>
+        <p>
+            Product details, availability and prices may change.
+            Always verify the exact product model, condition,
+            delivery charges and final price on the retailer's
+            website before purchasing.
+        </p>
+
+        <h3>External Websites</h3>
+        <p>
+            HK PriceHunt may link to third-party retailer websites.
+            Purchases made on those websites are subject to the
+            retailer's own terms and policies.
+        </p>
+
+        <h3>Website Use</h3>
+        <p>
+            You agree not to misuse the website, interfere with
+            its operation or attempt unauthorized access.
+        </p>
+
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="info-section" id="disclaimer">
+
+        <p class="eyebrow">IMPORTANT INFORMATION</p>
+        <h2>Disclaimer</h2>
+
+        <p>
+            HK PriceHunt provides product search and price comparison
+            information for convenience.
+        </p>
+
+        <p>
+            Prices, product descriptions, availability and offers
+            are provided by third-party shopping data sources and
+            may not always be current or complete.
+        </p>
+
+        <p>
+            We do not directly sell products. The final purchase,
+            payment, delivery, warranty and return process is
+            handled by the retailer.
+        </p>
+
+        <p>
+            Users should verify all details on the retailer's
+            website before making a purchase.
+        </p>
+
+    </section>
+
+    <!-- AFFILIATE DISCLOSURE -->
+    <section class="info-section" id="affiliate">
+
+        <p class="eyebrow">TRANSPARENCY</p>
+        <h2>Affiliate Disclosure</h2>
+
+        <p>
+            HK PriceHunt may participate in affiliate programmes
+            in the future. If an affiliate link is used, we may
+            earn a commission when a qualifying purchase is made
+            through that link, at no additional cost to the buyer.
+        </p>
+
+        <p>
+            Any affiliate relationship will be disclosed clearly
+            where applicable.
+        </p>
+
+    </section>
+
 </main>
 
-<footer>
-    <p>
-        HK PriceHunt · Offers are supplied by third-party shopping data.
-        Always verify exact model, condition, delivery and final checkout price.
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-brand">
+        <strong>HK PriceHunt</strong>
+        <p>Compare More. Save More. Shop Smart.</p>
+        <p>Created by Himanshu</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms & Conditions</a>
+        <a href="#disclaimer">Disclaimer</a>
+        <a href="#affiliate">Affiliate Disclosure</a>
+    </div>
+
+    <p class="copyright">
+        © <span id="currentYear"></span> HK PriceHunt.
+        All rights reserved.
     </p>
+
 </footer>
 
-<script src="app.js"></script>
+<script src="/app.js"></script>
+
+<script>
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+</script>
 
 </body>
 </html>
